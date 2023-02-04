@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agenda</title>
+</head>
+
+<body>
+  <nav>
+
+    <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+    </div>
+      <ul class="nav-list"> 
+        </li>
+         <li><a href='index.html'>Home</a>
+        </li>
+         <li><a href='agendamento.html'>Agendamento</a>
+        </li>
+         <li><a href='sobre.html'>Quem somos nós?</a>
+        </li>
+         <li><a href='contato.html'>Contato</a>
+        </li> 
+        <li id="login"><a href='login.html'>Login</a>
+
+         <li><a href='cadastro.html'>Cadastro</a>    
+      </ul>
+    </nav> 
+    <form class="form" name="form" action="agendar.php" method="POST"
+action="recebe_dados_post.php">
+<div class="card">
+
+      <div class="card-top">
+         <img class="imglogin" src="img/agenda.png" alt="">
+         <h2 class="h2login">Agendamento</h2>
+         <p>Marque uma data aqui</p>
+      </div>
+
+      <div class="card-group">
+         <label class="contatodata" for="">Data</label>
+         <input type="date" name="data" placeholder="Data" required>
+      </div>
+
+      <div class="card-group">
+         <label class="contatohora" for="">Horario</label>
+         <input type="time" name="senha" placeholder="Horario" required>
+      </div>
+      <div class="card-group">
+        <label for=""><input type="checkbox"> Enviar email</label>
+     </div>
+      <div class="card-group btn">
+       <a href="aviso.html">  <button type="submit">AGENDAR</button> </a>
+      </div>
+
+</div>
+
+</form>
+    </form>
+    <script src="mobile-navbar.js"></script>
+
+</body>
+</html>

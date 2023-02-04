@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='pt-br'>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <script src="validaCPF.js"></script>
+   <title>Login</title>
+</head>
+
+<body>
+
+   <nav>
+
+      <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+      </div>
+        <ul class="nav-list"> 
+          </li>
+           <li><a href='index.html'>Home</a>
+          </li>
+           <li><a href='agendamento.html'>Agendamento</a>
+          </li>
+           <li><a href='sobre.html'>Quem somos nós?</a>
+          </li>
+           <li><a href='contato.html'>Contato</a>
+          </li> 
+          <li id="login"><a href='login.html'>Login</a>
+
+           <li><a href='cadastro.html'>Cadastro</a>    
+        </ul>
+      </nav>
+
+
+ <form class="form" name="form" action="logar.php" method="POST"
+action="recebe_dados_post.php">
+<div class="card">
+
+      <div class="card-top">
+         <img class="imglogin" src="img/user.png" alt="">
+         <h2 class="h2login">Painel de controle</h2>
+         <p>Eu serei o rei dos piratas</p>
+      </div>
+
+      <div class="card-group">
+         <label class="emailogin" for="">Email</label>
+         <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="card-group">
+         <label class="senhalogin" for="">Senha</label>
+         <input type="password" name="senha" placeholder="Senha" required>
+      </div>
+
+      <div class="card-group">
+         <label for=""><input type="checkbox"> Lembre-me</label>
+      </div>
+
+      <div class="card-group btn">
+       <a href="agendamento.html">  <button type="submit">ACESSAR</button> </a>
+      </div>
+
+</div>
+
+</form>
+<script src="mobile-navbar.js"></script>
+
+
+</body>
+<html>

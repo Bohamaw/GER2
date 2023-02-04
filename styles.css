@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    background: #000000;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/*-----------------------------------MENU------------------------------------------------------------*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #000000;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list  li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+/*-----------------------------------HOME------------------------------------------------------------*/
+#cssger > h1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 120vh;
+    font-size: 120px;
+   width: 80vh;
+    top: -20vh;
+    
+    color: #8257E5;
+}
+
+
+#csscar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-left: 5vh;
+    width: 235vh;
+    top: -60px;
+   
+  }
+
+  #csscar > img {
+    max-width: 100%;
+    height: auto;
+ 
+  }
+
+  /*-----------------------------------AGENDAMENTO------------------------------------------------------------*/
+
+
+
+/*-----------------------------------SOBRE------------------------------------------------------------*/
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-left: 20vh;
+    font-size: 10vh;
+    width: 80vh;
+    top: 40px;
+    
+    color: #8257E5;
+
+}
+#somos > p {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
+    position: relative;
+    margin-left: 20vh;
+    font-size: 5vh;
+    width: 100vh;
+    top: 60px;
+    
+    color: #ffffff;
+}
+
+#login > a {
+    color: #8257E5;
+}
+
+/*-----------------------------------Contato------------------------------------------------------------*/
+
+.fale {
+    display: flex;
+    position: relative;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 130px;
+    margin-top: 70px;
+}
+
+.icons > img {
+width: 60px;
+margin-top: 14px;
+}
+
+.contatos {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 210px;
+    margin-top: -253px;
+}
+
+.contatos > h3 {
+margin-bottom: 50px;
+}
+
+/*-----------------------------------LOGIN/AGENDA------------------------------------------------------------*/
+
+.form {
+    width: 400px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.card {
+    box-shadow: 1px 1px 5px #ccc;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.card-top {
+    text-align: center;
+}
+
+.card-group {
+    margin-bottom: 10px;
+}
+
+.imglogin {
+width: 95px;
+}
+
+.h2login {
+color: #8257E5;
+}
+
+.card-group > label {
+    width: 100%;
+    color: #000000;
+    display: block;
+}
+
+.card-group > input {
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 15px;
+    padding: 5px;
+}
+
+#cor {
+    width: 100px;
+    padding: 15px;
+    size: 100px;
+}
+
+.card-group > a > button {
+    background-image: linear-gradient(to right, #4812c5, #8257E5);
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    color: #ffffff;
+    border: 0px;
+    outline: 0;
+}
+
+.btn button:hover {
+    background-image: linear-gradient(to right, #8257E5, #4812c5);
+
+}
+
+/*-----------------------------------MEDIA------------------------------------------------------------*/
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background-color: #000000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 1;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+
+    #somos > h1 {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 87vw;
+        height: 10vh;
+        flex-direction: row;
+    }
+    #somos > p {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 87vw;
+        height: 80vh;
+        flex-direction: row;
+    }
+
+    #cssmelhor > h1 {
+        position: absolute;
+        top: 20vh;
+        right: 0;
+        width: 87vw;
+        height: 10vh;
+        flex-direction: row;
+    }
+    #scsscar > img {
+        opacity: 0;
+        position: absolute;
+        top: 88vh;
+        right: 0;
+        width: 87vw;
+        height: 10vh;
+        
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+.nav-list.active > h1 {
+    color: #000000;
+}
+
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line1 {
+   opacity: 0;
+    }
+.mobile-menu.active .line1 {
+    transform: rotate(45deg) translate(-5px, -7px);
+        }
